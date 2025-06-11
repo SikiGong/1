@@ -1,7 +1,8 @@
 # Pricing Sensitivity Model
 
-This repository includes a simple Python script that estimates the price
-elasticity of demand using a log-log linear regression model.
+This repository provides a lightweight Python script for estimating the price
+elasticity of demand using a log-log regression. The implementation relies only
+on the Python standard library so no additional packages are required.
 
 ## Files
 
@@ -10,17 +11,12 @@ elasticity of demand using a log-log linear regression model.
 
 ## Usage
 
-1. Install the dependencies:
+1. Run the script with a CSV file that has `price` and `quantity` columns. If the
+   file path contains spaces, wrap it in quotes:
 
 ```bash
-pip install pandas numpy scipy
+python pricing_sensitivity.py "~/Desktop/Doogooda/EDA/2024_long_ver2 (1).csv"
 ```
 
-2. Run the script with a CSV file that has `price` and `quantity` columns:
-
-```bash
-python pricing_sensitivity.py example_data.csv
-```
-
-The script will output an estimate of the price elasticity of demand for the
-given data.
+2. The script will output an estimate of the price elasticity for the provided
+   data.
